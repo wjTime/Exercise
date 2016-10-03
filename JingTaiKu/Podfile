@@ -1,0 +1,10 @@
+workspace 'NewApp.xcworkspace'
+xcodeproj 'NewApp/NewApp.xcodeproj'
+
+
+target 'NewApp' do
+platform :ios, '8.0'
+xcodeproj 'NewApp/NewApp.xcodeproj'
+end
+
+

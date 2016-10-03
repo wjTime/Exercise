@@ -19,11 +19,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var mLb: UILabel!
     var subsci = RACSubscriber?()
     var signal = RACSignal()
+    
+    
+    @IBOutlet weak var accountField: UITextField!
+    
+    @IBOutlet weak var pwdField: UITextField!
+    
+    
+    @IBOutlet weak var loginBtn: UIButton!
+    
     dynamic var age : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //view.backgroundColor = UIColor.redColor()
         
         // RACSignal
         //self.Demo1()
@@ -59,7 +68,23 @@ class ViewController: UIViewController {
         //self.Demo11()
         
         // 常见的宏 (不支持)
-        self.Demo12()
+        //self.Demo12()
+        
+        //let str:String?
+        //str?.characters.count
+       
+        
+        self.signal = RACSignal.combineLatest([self.accountField.rac_textSignal(),self.pwdField.rac_textSignal()]).map({ (x) -> AnyObject! in
+            print(x)
+            return true
+        })
+        self.signal.subscribeNext { (x) in
+            //print(x)
+        }
+        
+//        self.signal = RACSignal.combineLatest([self.accountField.rac_textSignal(),self.pwdField.rac_textSignal()]).subscribeNext({ (x) in
+//            print(x)
+//        })
     }
     
 
@@ -132,6 +157,8 @@ extension ViewController {
     }
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.age += 1
+        let vc = PushViewControll()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
 }
@@ -229,9 +256,20 @@ extension ViewController {
         } as RACDisposable
         
  
+        
+        
     }
 }
 
+extension ViewController {
+    
+    
 
+    
+    
+    
+    
+    
+}
 
 

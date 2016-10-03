@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tQn-Jp-XAN">
+                                <rect key="frame" x="56" y="83" width="209" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nwg-Pl-uls"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fqm-75-cNs">
+                                <rect key="frame" x="52" y="130" width="217" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="w0K-4P-E1D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwE-EI-iG9">
+                                <rect key="frame" x="72" y="193" width="172" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NJk-Un-qhm"/>
+                                </constraints>
+                                <state key="normal" title="登录"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fqm-75-cNs" firstAttribute="top" secondItem="tQn-Jp-XAN" secondAttribute="bottom" constant="17" id="49u-tI-Xp5"/>
+                            <constraint firstItem="kwE-EI-iG9" firstAttribute="top" secondItem="fqm-75-cNs" secondAttribute="bottom" constant="33" id="EHF-M1-aAl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kwE-EI-iG9" secondAttribute="trailing" constant="60" id="Qm0-p4-Bkw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tQn-Jp-XAN" secondAttribute="trailing" constant="39" id="b9f-j8-C79"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fqm-75-cNs" secondAttribute="trailing" constant="35" id="cYS-Dg-lxb"/>
+                            <constraint firstItem="tQn-Jp-XAN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="63" id="dnk-Vt-dxf"/>
+                            <constraint firstItem="kwE-EI-iG9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="56" id="ny8-FG-YjD"/>
+                            <constraint firstItem="fqm-75-cNs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="36" id="s2O-4C-Pan"/>
+                            <constraint firstItem="tQn-Jp-XAN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="xHq-Va-7AT"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="accountTF" destination="tQn-Jp-XAN" id="5oa-qd-JEu"/>
+                        <outlet property="loginBtn" destination="kwE-EI-iG9" id="CWf-o4-pek"/>
+                        <outlet property="pwdTF" destination="fqm-75-cNs" id="SMF-Xp-wxh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="384" y="195"/>
+        </scene>
+    </scenes>
+</document>

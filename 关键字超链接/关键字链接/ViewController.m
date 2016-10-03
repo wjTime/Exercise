@@ -21,6 +21,9 @@
     [super viewDidLoad];
     self.myview = [[SGStatusTextView alloc]initWithFrame:CGRectMake(100, 100, 200, 20)];
     [self.view addSubview:self.myview];
+    
+    NSArray *arr = @[@"1",@"2"];
+    NSLog(@"%@",arr[3]);
     // Do any additional setup after loading the view, typically from a nib.
 }
 

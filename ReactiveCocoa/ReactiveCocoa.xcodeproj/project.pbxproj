@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6940A4351D83A21600963D66 /* SwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940A4341D83A21600963D66 /* SwiftVC.swift */; };
+		6940A4371D83A2C100963D66 /* swiftmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6940A4361D83A2C100963D66 /* swiftmodel.swift */; };
 		697436BC1D6DDF720054DAE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 697436BB1D6DDF720054DAE3 /* main.m */; };
 		697436BF1D6DDF720054DAE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 697436BE1D6DDF720054DAE3 /* AppDelegate.m */; };
 		697436C21D6DDF720054DAE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697436C11D6DDF720054DAE3 /* ViewController.m */; };
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6940A4331D83A21600963D66 /* ReactiveCocoa-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactiveCocoa-Bridging-Header.h"; sourceTree = "<group>"; };
+		6940A4341D83A21600963D66 /* SwiftVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftVC.swift; sourceTree = "<group>"; };
+		6940A4361D83A2C100963D66 /* swiftmodel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = swiftmodel.swift; sourceTree = "<group>"; };
 		697436B71D6DDF720054DAE3 /* ReactiveCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		697436BB1D6DDF720054DAE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		697436BD1D6DDF720054DAE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,6 +141,9 @@
 				697436C81D6DDF720054DAE3 /* LaunchScreen.storyboard */,
 				697436CB1D6DDF720054DAE3 /* Info.plist */,
 				697436BA1D6DDF720054DAE3 /* Supporting Files */,
+				6940A4341D83A21600963D66 /* SwiftVC.swift */,
+				6940A4361D83A2C100963D66 /* swiftmodel.swift */,
+				6940A4331D83A21600963D66 /* ReactiveCocoa-Bridging-Header.h */,
 			);
 			path = ReactiveCocoa;
 			sourceTree = "<group>";
@@ -349,6 +357,8 @@
 			files = (
 				697436C21D6DDF720054DAE3 /* ViewController.m in Sources */,
 				697436BF1D6DDF720054DAE3 /* AppDelegate.m in Sources */,
+				6940A4351D83A21600963D66 /* SwiftVC.swift in Sources */,
+				6940A4371D83A2C100963D66 /* swiftmodel.swift in Sources */,
 				697436BC1D6DDF720054DAE3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,10 +501,15 @@
 			baseConfigurationReference = E3066EC4A09E29FD0DDF4761 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = ReactiveCocoa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.ReactiveCocoa;
+				PRODUCT_MODULE_NAME = swifttest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactiveCocoa/ReactiveCocoa-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -503,10 +518,14 @@
 			baseConfigurationReference = C1939A310B79BADF099A8274 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = ReactiveCocoa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.ReactiveCocoa;
+				PRODUCT_MODULE_NAME = swifttest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactiveCocoa/ReactiveCocoa-Bridging-Header.h";
 			};
 			name = Release;
 		};
