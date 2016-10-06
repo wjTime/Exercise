@@ -1,0 +1,35 @@
+#workspace名字
+
+workspace 'MySpace'
+
+#静态库的名称
+
+xcodeproj 'StaticLib/StaticLib.xcodeproj'
+
+#实例工程名称
+
+xcodeproj 'SpaceDemo/SpaceDemo.xcodeproj'
+
+#静态库需要引入的三方库
+
+target :StaticLib do
+
+platform :ios, '7.0'
+
+pod 'AFNetworking'
+
+xcodeproj 'StaticLib/StaticLib.xcodeproj'
+
+end
+
+#实例工程需要引入的三方库
+
+target :SpaceDemo do
+
+platform :ios, '7.0'
+
+pod 'AFNetworking'
+
+xcodeproj 'SpaceDemo/SpaceDemo.xcodeproj'
+
+end
