@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		699AB06A1DA63A59000AACEA /* CommontKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 699AB0691DA63A1F000AACEA /* CommontKit.h */; };
+		699AB07A1DA64117000AACEA /* LogTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 699AB0791DA64117000AACEA /* LogTest.m */; };
+		699AB07B1DA6417A000AACEA /* LogTest.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 699AB0781DA64117000AACEA /* LogTest.h */; };
+		8766B6D1EB25FBE8B794D531 /* libPods-CommontLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF6BEB882DFFE4E2F0EFA70 /* libPods-CommontLib.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		699AB0591DA636B1000AACEA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				699AB07B1DA6417A000AACEA /* LogTest.h in CopyFiles */,
+				699AB06A1DA63A59000AACEA /* CommontKit.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1CF6BEB882DFFE4E2F0EFA70 /* libPods-CommontLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CommontLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		699AB05B1DA636B1000AACEA /* libCommontLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCommontLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		699AB0691DA63A1F000AACEA /* CommontKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommontKit.h; sourceTree = "<group>"; };
+		699AB0781DA64117000AACEA /* LogTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogTest.h; sourceTree = "<group>"; };
+		699AB0791DA64117000AACEA /* LogTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogTest.m; sourceTree = "<group>"; };
+		A8E5E8E852AA73D4DADCA4FF /* Pods-CommontLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommontLib.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CommontLib/Pods-CommontLib.debug.xcconfig"; sourceTree = "<group>"; };
+		B6F4499A1B9BA619DD640A4E /* Pods-CommontLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommontLib.release.xcconfig"; path = "../Pods/Target Support Files/Pods-CommontLib/Pods-CommontLib.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		699AB0581DA636B1000AACEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8766B6D1EB25FBE8B794D531 /* libPods-CommontLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62765465FD66F7DC9A490ACC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8E5E8E852AA73D4DADCA4FF /* Pods-CommontLib.debug.xcconfig */,
+				B6F4499A1B9BA619DD640A4E /* Pods-CommontLib.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		699AB0521DA636B1000AACEA = {
+			isa = PBXGroup;
+			children = (
+				699AB06E1DA63DFC000AACEA /* Core */,
+				699AB05D1DA636B1000AACEA /* CommontLib */,
+				699AB05C1DA636B1000AACEA /* Products */,
+				62765465FD66F7DC9A490ACC /* Pods */,
+				6ABE7C63B77423825DD29DC1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		699AB05C1DA636B1000AACEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				699AB05B1DA636B1000AACEA /* libCommontLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		699AB05D1DA636B1000AACEA /* CommontLib */ = {
+			isa = PBXGroup;
+			children = (
+				699AB0691DA63A1F000AACEA /* CommontKit.h */,
+			);
+			path = CommontLib;
+			sourceTree = "<group>";
+		};
+		699AB06E1DA63DFC000AACEA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				699AB0781DA64117000AACEA /* LogTest.h */,
+				699AB0791DA64117000AACEA /* LogTest.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6ABE7C63B77423825DD29DC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CF6BEB882DFFE4E2F0EFA70 /* libPods-CommontLib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		699AB05A1DA636B1000AACEA /* CommontLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 699AB0641DA636B1000AACEA /* Build configuration list for PBXNativeTarget "CommontLib" */;
+			buildPhases = (
+				C7BAC1E54E44C47B89BE5224 /* Check Pods Manifest.lock */,
+				699AB0571DA636B1000AACEA /* Sources */,
+				699AB0581DA636B1000AACEA /* Frameworks */,
+				699AB0591DA636B1000AACEA /* CopyFiles */,
+				D210BDB2812238DE2C0B063B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommontLib;
+			productName = CommontLib;
+			productReference = 699AB05B1DA636B1000AACEA /* libCommontLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		699AB0531DA636B1000AACEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = github;
+				TargetAttributes = {
+					699AB05A1DA636B1000AACEA = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 699AB0561DA636B1000AACEA /* Build configuration list for PBXProject "CommontLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 699AB0521DA636B1000AACEA;
+			productRefGroup = 699AB05C1DA636B1000AACEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				699AB05A1DA636B1000AACEA /* CommontLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C7BAC1E54E44C47B89BE5224 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D210BDB2812238DE2C0B063B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-CommontLib/Pods-CommontLib-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		699AB0571DA636B1000AACEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				699AB07A1DA64117000AACEA /* LogTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		699AB0621DA636B1000AACEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		699AB0631DA636B1000AACEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		699AB0651DA636B1000AACEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8E5E8E852AA73D4DADCA4FF /* Pods-CommontLib.debug.xcconfig */;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		699AB0661DA636B1000AACEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6F4499A1B9BA619DD640A4E /* Pods-CommontLib.release.xcconfig */;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		699AB0561DA636B1000AACEA /* Build configuration list for PBXProject "CommontLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				699AB0621DA636B1000AACEA /* Debug */,
+				699AB0631DA636B1000AACEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		699AB0641DA636B1000AACEA /* Build configuration list for PBXNativeTarget "CommontLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				699AB0651DA636B1000AACEA /* Debug */,
+				699AB0661DA636B1000AACEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 699AB0531DA636B1000AACEA /* Project object */;
+}

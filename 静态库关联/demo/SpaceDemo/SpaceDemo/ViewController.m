@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "AFNetworking.h"
+#import "StaticLib/StaticLib.h"
+
 
 @interface ViewController ()
 
